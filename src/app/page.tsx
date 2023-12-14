@@ -1,10 +1,11 @@
 import { Hero } from '@/components';
+import { Row } from 'antd';
 export default function Home() {
     return (
         <main className="h-full w-full">
-            <div className="flex flex-col h-[850px] gap-20">
+            <Row className="flex flex-col h-[850px] gap-20">
                 <Hero />
-            </div>
+            </Row>
         </main>
     );
 }
