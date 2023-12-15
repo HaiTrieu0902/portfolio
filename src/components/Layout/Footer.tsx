@@ -1,10 +1,9 @@
-import React from 'react';
-import { RxDiscordLogo, RxGithubLogo, RxInstagramLogo, RxTwitterLogo, RxLinkedinLogo } from 'react-icons/rx';
 import { FaYoutube } from 'react-icons/fa';
+import { RxDiscordLogo, RxGithubLogo } from 'react-icons/rx';
 
 const Footer = () => {
     return (
-        <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] z-99">
+        <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] z-99 mt-20">
             <div className="w-full flex flex-col items-center justify-center m-auto">
                 <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
                     <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
@@ -51,9 +50,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="mb-[20px] text-[15px] text-center">
-                    &copy; WebChain Dev 2023 Inc. All rights reserved
-                </div>
+                <div className="mb-[20px] text-[15px] text-center">&copy; Design by Hai Trieu. All rights reserved</div>
             </div>
         </div>
     );

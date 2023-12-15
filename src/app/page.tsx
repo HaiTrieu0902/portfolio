@@ -8,8 +8,8 @@ export default function Home() {
             </Row>
             <About />
             <Skills />
-            <Encryption />
             <Project />
+            <Encryption />
         </main>
     );
 }
