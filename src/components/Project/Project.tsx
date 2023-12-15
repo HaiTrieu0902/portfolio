@@ -36,11 +36,7 @@ const Projects = () => {
                 />
             </div>
             <Carousel className="z-99" afterChange={onChange} dotPosition={'left'}>
-                <div
-                    onClick={() => {
-                        console.log(' ihihih;');
-                    }}
-                >
+                <div>
                     <h3 style={contentStyle}>1</h3>
                 </div>
                 <div>

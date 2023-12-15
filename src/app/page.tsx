@@ -1,4 +1,4 @@
-import { Encryption, Footer, Hero, Project, Skills } from '@/components';
+import { About, Encryption, Footer, Hero, Project, Skills } from '@/components';
 import { Row } from 'antd';
 export default function Home() {
     return (
@@ -6,6 +6,7 @@ export default function Home() {
             <Row className="flex flex-col h-[850px] gap-20">
                 <Hero />
             </Row>
+            <About />
             <Skills />
             <Encryption />
             <Project />
