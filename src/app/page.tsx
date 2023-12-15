@@ -1,11 +1,14 @@
-import { Hero } from '@/components';
+import { Encryption, Footer, Hero, Project, Skills } from '@/components';
 import { Row } from 'antd';
 export default function Home() {
     return (
-        <main className="h-full w-full">
+        <main className=" w-full">
             <Row className="flex flex-col h-[850px] gap-20">
                 <Hero />
             </Row>
+            <Skills />
+            <Encryption />
+            <Project />
         </main>
     );
 }

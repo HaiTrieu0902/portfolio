@@ -3,8 +3,19 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+    --bg-hover: #0e282e;
+    --bg-color: #0d1117;
+}
 .cursive {
     font-family: 'Cedarville Cursive', cursive;
+}
+
+.z-99 {
+    z-index: 99;
+}
+.z-1000 {
+    z-index: 1000;
 }
 .Welcome-text {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
