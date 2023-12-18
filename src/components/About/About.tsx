@@ -39,7 +39,7 @@ const About = () => {
                     <Col className="mt-3" span={12}>
                         <div className="d-flex gap-3">
                             <span className="text-gray-500 font-bold text-[14px]">Age: </span>
-                            <span className="font-bold text-[14px]">18 plus</span>
+                            <span className="font-bold text-[14px]">18 plus plus+</span>
                         </div>
                     </Col>
                     <Col className="mt-3" span={12}>
@@ -58,6 +58,18 @@ const About = () => {
                         <div className="d-flex gap-3">
                             <span className="text-gray-500 font-bold text-[14px]">Address: </span>
                             <span className="font-bold text-[14px]">Ha Dong, Ha Noi</span>
+                        </div>
+                    </Col>
+                    <Col className="mt-3" span={12}>
+                        <div className="d-flex gap-3">
+                            <span className="text-gray-500 font-bold text-[14px]">Educations: </span>
+                            <span className="font-bold text-[14px]">Ha Noi Open University</span>
+                        </div>
+                    </Col>
+                    <Col className="mt-3" span={12}>
+                        <div className="d-flex gap-3">
+                            <span className="text-gray-500 font-bold text-[14px]">Main: </span>
+                            <span className="font-bold text-[14px]">Ninja</span>
                         </div>
                     </Col>
                 </Row>
