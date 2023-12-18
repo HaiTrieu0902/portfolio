@@ -36,7 +36,8 @@ const HeroContent = () => {
 
                 <motion.p variants={slideInFromLeft(0.8)} className="text-lg text-white my-5 max-w-[600px]">
                     I&apos;m Hai Trieu, A Junior full Stack Software Engineer with experience in Website, Mobile App,
-                    and Software development. Check out my projects and skills.
+                    and Software development. Check out my projects and skills.Now, I am working as a programmer at
+                    Powergate Software
                 </motion.p>
                 <motion.a
                     variants={slideInFromLeft(1)}
