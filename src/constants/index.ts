@@ -2,14 +2,17 @@ export const Socials = [
     {
         name: 'Github',
         src: '/icon/github.svg',
+        links: 'https://github.com/HaiTrieu0902',
     },
     {
         name: 'LinkedIn',
         src: '/icon/linkedin.svg',
+        links: 'https://www.linkedin.com/in/trieubuihai/',
     },
     {
         name: 'Facebook',
         src: '/icon/facebook.svg',
+        links: 'https://www.facebook.com/trieuql123',
     },
 ];
 
@@ -43,6 +46,12 @@ export const Frontend_skill = [
         Image: '/img/skill/react.png',
         width: 80,
         height: 80,
+    },
+    {
+        skill_name: 'React Native',
+        Image: '/img/skill/reactnative.png',
+        width: 90,
+        height: 90,
     },
     {
         skill_name: 'Redux',

@@ -1,17 +1,53 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '@/utils/motions';
-import { Row } from 'antd';
+import { Row, notification } from 'antd';
+
 const HeroContent = () => {
+    const [api, contextHolder] = notification.useNotification();
+    const openNotification = () => {
+        api.info({
+            message: (
+                <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500">
+                    Ayyyyzaaa Have a good day
+                </span>
+            ),
+            description: 'My CV is in the process of completion, it will be available shortly, thank you!!!',
+            duration: 0,
+        });
+    };
+
+    const openNotificationInfo = () => {
+        api.open({
+            message: (
+                <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500">
+                    Advertise a bit {':('}
+                </span>
+            ),
+            description: 'If you want to have a portfolio like this, please contact me !!!',
+            duration: 0,
+        });
+    };
+
+    useEffect(() => {
+        const notificationTimeout = setTimeout(() => {
+            openNotificationInfo();
+        }, 3000);
+        return () => {
+            clearTimeout(notificationTimeout);
+        };
+    }, []);
+
     return (
         <motion.div
             initial="hidden"
             animate="visible"
             className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
         >
+            {contextHolder}
             <Row className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
                 <motion.div
                     variants={slideInFromTop}
@@ -36,9 +72,13 @@ const HeroContent = () => {
 
                 <motion.p variants={slideInFromLeft(0.8)} className="text-lg text-white my-5 max-w-[600px]">
                     I&apos;m Hai Trieu, A Junior full Stack Software Engineer with experience in Website, Mobile App,
-                    and Software development. Check out my projects and skills.
+                    and Software development. Check out my projects and skills.Now, I am working as a programmer at{' '}
+                    <a href="https://powergategroup.com/" target="#blank" className="text-lg text-[#F47321]">
+                        Powergate Software
+                    </a>
                 </motion.p>
                 <motion.a
+                    onClick={openNotification}
                     variants={slideInFromLeft(1)}
                     className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
                 >
