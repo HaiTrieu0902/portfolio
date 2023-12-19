@@ -45,6 +45,12 @@ export const Frontend_skill = [
         height: 80,
     },
     {
+        skill_name: 'React Native',
+        Image: '/img/skill/reactnative.png',
+        width: 90,
+        height: 90,
+    },
+    {
         skill_name: 'Redux',
         Image: '/img/skill/redux.png',
         width: 80,
