@@ -5,7 +5,7 @@ const About = () => {
     return (
         <Row
             id="about-me"
-            className="flex-wrap items-center justify-center h-[640px] w-full relative overflow-hidden z-99 px-60"
+            className="flex-wrap items-center justify-center  md:h-[500px] lg:h-[640px] xl:h-[640px] 2xl:h-[640px] w-full relative overflow-hidden z-99 lg:px-10 xl:px-60 2xl:px-60"
         >
             <Col span={12}>
                 <Image

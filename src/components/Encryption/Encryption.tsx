@@ -8,7 +8,7 @@ const Encryption = () => {
     return (
         <Row
             id="activities"
-            className="flex flex-row relative items-center justify-center min-h-screen w-full  h-full z-99 "
+            className="flex flex-row relative items-center justify-center  md:min-h-[40vh] lg:min-h-[40vh] xl:min-h-screen 2xl:min-h-screen  w-full  h-full z-99 "
         >
             <Row className="absolute w-auto h-auto top-0 z-[5]">
                 <motion.div
