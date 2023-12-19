@@ -35,7 +35,12 @@ const Encryption = () => {
                 >
                     Reading
                 </motion.div>
-
+                <motion.div
+                    variants={slideInFromTop}
+                    className="text-[36px] font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500"
+                >
+                    Cooking
+                </motion.div>
                 <motion.div
                     variants={slideInFromTop}
                     className="text-[36px] font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500"

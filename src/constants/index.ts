@@ -2,14 +2,17 @@ export const Socials = [
     {
         name: 'Github',
         src: '/icon/github.svg',
+        links: 'https://github.com/HaiTrieu0902',
     },
     {
         name: 'LinkedIn',
         src: '/icon/linkedin.svg',
+        links: 'https://www.linkedin.com/in/trieubuihai/',
     },
     {
         name: 'Facebook',
         src: '/icon/facebook.svg',
+        links: 'https://www.facebook.com/trieuql123',
     },
 ];
 
