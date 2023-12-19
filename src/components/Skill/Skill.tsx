@@ -27,10 +27,10 @@ const Skills = () => {
                 ))}
             </Row>
             <Row className="h-20"></Row>
-            <Row className="w-full h-full absolute">
+            <Row className="w-full h-full  absolute">
                 <Row className="w-full h-full z-[-10]  absolute flex items-center justify-center bg-cover">
                     <video
-                        className="w-full h-auto"
+                        className="w-full h-auto md:h-[600px]"
                         preload="false"
                         playsInline
                         loop
