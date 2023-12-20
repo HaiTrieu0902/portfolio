@@ -1,8 +1,7 @@
 'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
 import { slideInFromTop } from '@/utils/motions';
-import { Col, Image, Row } from 'antd';
+import { Row } from 'antd';
+import { motion } from 'framer-motion';
 
 const Encryption = () => {
     return (

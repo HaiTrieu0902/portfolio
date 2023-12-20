@@ -3,17 +3,19 @@ import { Col, Row, Image } from 'antd';
 import { useEffect, useState } from 'react';
 
 const About = () => {
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+
     useEffect(() => {
-        const windowWidth = window.innerWidth;
-        window.addEventListener('resize', () => {
-            setWidth(windowWidth);
-        });
-        return () => {
-            window.removeEventListener('resize', () => {
-                setWidth(windowWidth);
-            });
-        };
+        if (typeof window !== 'undefined') {
+            const handleResize = () => {
+                setWidth(window.innerWidth);
+            };
+            window.addEventListener('resize', handleResize);
+
+            return () => {
+                window.removeEventListener('resize', handleResize);
+            };
+        }
     }, []);
 
     return (
