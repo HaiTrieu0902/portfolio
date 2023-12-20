@@ -45,7 +45,7 @@ const HeroContent = () => {
         <motion.div
             initial="hidden"
             animate="visible"
-            className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+            className="flex flex-row items-center justify-center px-20 sx:px-2 mt-40 w-full z-[20]"
         >
             {contextHolder}
             <Row className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
@@ -80,7 +80,7 @@ const HeroContent = () => {
                 <motion.a
                     onClick={openNotification}
                     variants={slideInFromLeft(1)}
-                    className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+                    className="py-2 sx:-mt-10 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
                 >
                     My CV
                 </motion.a>
