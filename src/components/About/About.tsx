@@ -24,7 +24,7 @@ const About = () => {
             className="flex-wrap items-center justify-center  md:h-[500px] lg:h-[640px] xl:h-[640px] 2xl:h-[640px] w-full relative overflow-hidden z-99 lg:px-10 xl:px-60 2xl:px-60"
         >
             <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}>
-                <Image
+                {/* <Image
                     style={{ objectFit: 'cover', borderRadius: '50%' }}
                     width={width < 750 ? 280 : 400}
                     height={width < 750 ? 280 : 400}
@@ -32,6 +32,12 @@ const About = () => {
                     preview={false}
                     alt="HAITRIEU"
                     className="sx:mt-5 sx:w-full"
+                /> */}
+                <img
+                    className="sx:w-[280px] sx:h-[280px] w-[400px] h-[400px] sx:mt-5"
+                    style={{ objectFit: 'cover', borderRadius: '50%' }}
+                    src="/img/haitrieumain.jpg"
+                    alt="HaiTrieu"
                 />
             </Col>
             <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} className="text-white sx:px-3">
