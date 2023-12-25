@@ -1,6 +1,16 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 import { Col, Row, Image } from 'antd';
 import { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
+
+export const handleDiffDate = (startDate: dayjs.Dayjs, endDate: dayjs.Dayjs) => {
+    if (startDate && endDate) {
+        const startDateValue = dayjs(startDate).startOf('day');
+        const endDateValue = dayjs(endDate).startOf('day');
+        return Number(endDateValue.diff(startDateValue, 'years'));
+    }
+};
 
 const About = () => {
     const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
@@ -62,7 +72,9 @@ const About = () => {
                     <Col className="mt-3" span={12}>
                         <div className="d-flex gap-3">
                             <span className="text-gray-500 font-bold text-[14px] sx:text-[12px]">Age: </span>
-                            <span className="font-bold text-[14px] sx:text-[12px]">18 plus plus+</span>
+                            <span className="font-bold text-[14px] sx:text-[12px]">
+                                {handleDiffDate(dayjs('09/02/2002'), dayjs())}
+                            </span>
                         </div>
                     </Col>
                     <Col className="mt-3" span={12}>
