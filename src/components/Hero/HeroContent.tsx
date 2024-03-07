@@ -32,14 +32,14 @@ const HeroContent = () => {
         });
     };
 
-    useEffect(() => {
-        const notificationTimeout = setTimeout(() => {
-            openNotificationInfo();
-        }, 3000);
-        return () => {
-            clearTimeout(notificationTimeout);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const notificationTimeout = setTimeout(() => {
+    //         openNotificationInfo();
+    //     }, 3000);
+    //     return () => {
+    //         clearTimeout(notificationTimeout);
+    //     };
+    // }, []);
 
     return (
         <motion.div
