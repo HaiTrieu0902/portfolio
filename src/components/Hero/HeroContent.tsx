@@ -12,25 +12,22 @@ const HeroContent = () => {
         api.info({
             message: (
                 <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500">
-                    Ayyyyzaaa Have a good day
+                    Have a good day!
                 </span>
             ),
             description: 'My CV is in the process of completion, it will be available shortly, thank you!!!',
             duration: 0,
         });
     };
-
-    const openNotificationInfo = () => {
-        api.open({
-            message: (
-                <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500">
-                    Advertise a bit {':('}
-                </span>
-            ),
-            description: 'If you want to have a portfolio like this, please contact me !!!',
-            duration: 0,
-        });
-    };
+    // const openNotificationInfo = () => {
+    //     api.open({
+    //         message: (
+    //             <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r z-99 from-red-500 to-cyan-500"></span>
+    //         ),
+    //         description: 'If you want to have a portfolio like this, please contact me !!!',
+    //         duration: 0,
+    //     });
+    // };
 
     // useEffect(() => {
     //     const notificationTimeout = setTimeout(() => {
