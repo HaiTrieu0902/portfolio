@@ -46,7 +46,7 @@ const About = () => {
                 <img
                     className="sx:w-[280px] sx:h-[280px] w-[400px] h-[400px] sx:mt-5"
                     style={{ objectFit: 'cover', borderRadius: '50%' }}
-                    src="/img/haitrieumain.jpg"
+                    src="/img/7.png"
                     alt="HaiTrieu"
                 />
             </Col>
@@ -99,12 +99,6 @@ const About = () => {
                         <div className="d-flex gap-3">
                             <span className="text-gray-500 font-bold text-[14px] sx:text-[12px]">Educations: </span>
                             <span className="font-bold text-[14px] sx:text-[12px]">Ha Noi Open University</span>
-                        </div>
-                    </Col>
-                    <Col className="mt-3" span={12}>
-                        <div className="d-flex gap-3">
-                            <span className="text-gray-500 font-bold text-[14px] sx:text-[12px]">Main: </span>
-                            <span className="font-bold text-[14px] sx:text-[12px]">Ninja</span>
                         </div>
                     </Col>
                 </Row>
