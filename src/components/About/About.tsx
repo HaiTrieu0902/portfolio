@@ -46,7 +46,7 @@ const About = () => {
                 <img
                     className="sx:w-[280px] sx:h-[280px] w-[400px] h-[400px] sx:mt-5"
                     style={{ objectFit: 'cover', borderRadius: '50%' }}
-                    src="/img/7.png"
+                    src="/img/haitrieumain.jpg"
                     alt="HaiTrieu"
                 />
             </Col>
