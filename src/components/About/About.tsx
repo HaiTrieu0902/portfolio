@@ -36,9 +36,9 @@ const About = () => {
             <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }}>
                 {/* <Image
                     style={{ objectFit: 'cover', borderRadius: '50%' }}
-                    width={width < 750 ? 280 : 400}
-                    height={width < 750 ? 280 : 400}
-                    src={'/img/haitrieumain.jpg'}
+                    width={width < 750 ? 280 : 600}
+                    height={width < 750 ? 280 : 600}
+                    src={'/img/haitrieu.jpg'}
                     preview={false}
                     alt="HAITRIEU"
                     className="sx:mt-5 sx:w-full"
@@ -53,7 +53,9 @@ const About = () => {
             <Col sm={{ span: 24 }} md={{ span: 12 }} lg={{ span: 12 }} xl={{ span: 12 }} className="text-white sx:px-3">
                 <div className="d-flex items-center justify-center sx:mt-5">
                     <h2 className="text-white font-extrabold text-2xl">
-                        {'"A simple person who is always optimistic even when hopeless"'}
+                        {'"Slowly, good things always take time,"'}
+                        <br />
+                        {'Enjoy the pain 🥷'}
                     </h2>
                 </div>
                 <Row className="pt-10">
